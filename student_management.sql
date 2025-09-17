@@ -35,18 +35,7 @@ CREATE TABLE `students` (
   `added_on` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Dumping data for table `students`
---
 
-INSERT INTO `students` (`id`, `name`, `age`, `grade`, `added_on`) VALUES
-(2, 'Moazam Khan', 20, '15', '2025-09-17 14:48:59'),
-(3, 'kamran', 40, '22', '2025-09-17 14:51:01'),
-(4, 'new student', 23, '12', '2025-09-17 14:57:31'),
-(5, 'qe', 12, '12', '2025-09-17 14:57:40'),
-(6, 'new student', 13, '11', '2025-09-17 15:08:11');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `users`
@@ -59,13 +48,7 @@ CREATE TABLE `users` (
   `added_on` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Dumping data for table `users`
---
 
-INSERT INTO `users` (`id`, `username`, `password`, `added_on`) VALUES
-(1, 'moazam', '$2y$10$KBZkFcRkC78rvqDcL4TSHuHdeQ3IB2Jx/jK9B/a/seLDsj6K63EAm', '2025-09-17 14:41:33'),
-(2, 'kamran', '$2y$10$TrRzh7NrhCz7kgXHEA5JWe5TrfJvSdAEBI9fqF6lFAQIJMhQTAEla', '2025-09-17 14:59:17');
 
 --
 -- Indexes for dumped tables
@@ -91,13 +74,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
